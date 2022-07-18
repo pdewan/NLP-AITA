@@ -1,0 +1,8 @@
+18:52:22	 From  Bowen Gu   to   Hao (Harry) Wang(Direct Message) : Hello World
+18:52:26	 From  Hao (Harry) Wang   to   Bowen Gu(Direct Message) : 213123
+18:52:30	 From  Hao (Harry) Wang : 2312
+18:52:35	 From  Bowen Gu   to   Hao (Harry) Wang(Direct Message) : abc
+18:52:38	 From  Bowen Gu   to   Hao (Harry) Wang(Direct Message) : abcde
+18:52:49	 From  Hao (Harry) Wang : hello
+18:52:50	 From  Bowen Gu : Hello
+18:52:53	 From  Hao (Harry) Wang : hedfs

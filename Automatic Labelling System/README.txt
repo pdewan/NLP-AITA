@@ -1,0 +1,20 @@
+Step 1: Data Cleaning
+1. download "Step 1_ Data Cleaning.ipynb" from NLP-AITA -> Automatic Labelling System -> Code.
+2. download "Automatic Labelling System.xlsx" from NLP-AITA -> Automatic Labelling System -> Data.
+3. Convert each sub-sheet of "Automatic Labelling System.xlsx" into single CSV files. Fro example, the sub-sheet named "comp401-Fall-2012" should be converted to a single CSV file named "comp401-Fall-2012_labeled (new).csv".
+4. move all the converted CSV files to the same folder as "Step 1_ Data Cleaning.ipynb".
+5. open "Step 1_ Data Cleaning.ipynb" using Anaconda3, Jupyter Notebook.
+6. In the third cell of "Step 1_ Data Cleaning.ipynb", change the boolean variables (eg. hyper_cleaning = True) in the "data_cleaning" function to indicate the type of data cleaning you want. A detailed explanation of the variables is shown in the thrid cell, above the function body. Also, make sure that the file names in the variable "input_cvs_file_name_array" (located in the last cell) is consistent with the names of your converted CSV files.
+7. Once you choose the data cleaning type, the output file will be multiple CSV files, the number of which is in consistent with the number of input files. The output CSV files will have the corresponding data cleaning type as suffix (eg. if you choose hyper_cleaning = True, there will be a "(hyper_cleaned)" in your output CSV filename for both the training and testing data). The output files will be in the same folder as your IPYNB and original CSV files.
+
+Step 2: Word Embedding
+1. download "Step 2_ Word Embedding.ipynb" from NLP-AITA -> Automatic Labelling System -> Code.
+2. open "Step 2_ Word Embedding.ipynb" using Anaconda3, Jupyter Notebook.
+3. In the last cell, change the variable "data_clean_type" to the data cleaning type you chose in Step 1: Data Cleaning. The supported "data_clean_type" is shown in the last cell. Also, make sure that the file names in the variable "input_cvs_file_name_array" (located in the last cell) is consistent with the names of your converted CSV files. After that, change the variable "embedding_method" to the one you would like to use. The supported "embedding_method" are shown in the last cell.
+4. Once you set the data cleaning type, word embedding will be performed on the posts in the input CSV files will be automatically. The output will be multiple CSV files, the number of which is in consistent with the number of input files. The file name should be "Original Input File Name + Data Cleaning Type + Embedding Method Used". The "Data Cleaning Type" and the "Embedding Method Used" is the one set by you before running the word embedding code. The output files will be in the same folder as your IPYNB and original CSV files.
+
+Step 3: Neural Network
+1. download "Step 3_ Neural Network.ipynb" from NLP-AITA -> Automatic Labelling System -> Code.
+2. open "Step 3_ Neural Network.ipynb" using Anaconda3, Jupyter Notebook.
+3. In the second cell, change the variable "training_data_type" to the one you would like to use. The supported "training_data_type" is shown in the second cell. Change the variable "test_data_type" to the one you would like to use. The supported "test_data_type" is shown in the second cell. Change the variable "data_clean_type" to the data cleaning type you chose in Step 1: Data Cleaning. The supported "data_clean_type" is shown in the second cell. Change the variable "embedding_model" to the one you want to use. The supported "embedding_model" is shown in the second cell. Change the variable "neural_network" to the one you want to use. The supported "neural_network" is shown in the second cell.
+4. Once you set the training data type, test data type, data cleaning type, embedding model, and neural network, the training will begin automatically. After the training finishes, a ".h5" file will be generated and be in the same folder as your IPYNB and original CSV files. The ".h5" file is the trained model. You may use it on the testing data set.
